@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<article style="width:100%; max-width: 970px; margin: auto;">
+
+<div class="r24259"></div>
+<script type="text/javascript">
+    (function() {
+        var date = new Date();
+
+        try {
+            date = new Date(date.toLocaleString('en-US', {
+                timeZone: 'Europe/Kiev'}
+            ));
+        } catch (e) {}
+
+        var ext = [
+            (date.getFullYear()).toString(),
+            ('0'+(date.getMonth()+1).toString()).substr(-2),
+            ('0'+(date.getDate()).toString()).substr(-2)
+        ].join('');
+
+        var tag = (function() {
+                var informers = document.getElementsByClassName('r24259'),
+                    len = informers.length;
+                return len ? informers[len - 1] : null;
+            })(),
+            idn = (function() {
+                var i, num, idn = '', chars = "abcdefghiklmnopqrstuvwxyz",
+                    len = Math.floor((Math.random() * 2) + 4);
+                for (i = 0; i < len; i++) {
+                    num = Math.floor(Math.random() * chars.length);
+                    idn += chars.substring(num, num + 1);
+                }
+                return idn;
+            })();
+        var container = document.createElement('div');
+            container.id = idn;
+        tag.appendChild(container);
+        var script = document.createElement('script');
+            script.className = 's24259';
+            script.src = 'https://goods.redtram.com/j/24259/?v=1&date='+ ext;
+            script.charset = 'utf-8';
+            script.dataset.idn = idn;
+        tag.parentNode.insertBefore(script, tag);
+    })();
+</script>
+
+    
+    
+
+</article>
+</body>
+</html>
