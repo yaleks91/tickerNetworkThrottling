@@ -23,7 +23,7 @@
                 script.src = 'https://goods.redtram.com/j/23641/?v=1&date='+ Date.now();
                 script.charset = 'utf-8';
                 script.dataset.idn = idn;
-            tag.insertBefore(script, tag);
+            tag.appendChild(script);
         } catch (e) {console.debug('something goes wrong', e)}
     })();
 </script>
